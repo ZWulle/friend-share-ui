@@ -1,2 +1,1 @@
-# friend-share-ui
-ui
+# veu项目笔记
