@@ -1,31 +1,29 @@
 <template>
   <div id="login">
-    <transition appear name="opacitytrans">
-      <div class="container" id="container">
-        <div class="form-container sign-in-container">
-          <form action="#">
-            <h1>FRIENDSHARE</h1>
-
-            <input type="text" placeholder="账号" v-model="account" />
-            <input type="password" placeholder="密码" v-model="password" />
-            <div class="button" @click="login()">登录</div>
-          </form>
-        </div>
-        <div class="overlay-container">
-          <div class="overlay">
-            <div class="overlay-panel overlay-right">
-              <img class="logo" src="@/assets/logo.png" alt="" />
-              <p>「 Business Direction is everything 」</p>
-              <!-- <button class="ghost" id="signUp">About Us</button>n -->
-            </div>
+    <!-- <transition appear name="opacitytrans"> -->
+    <div class="container" id="container">
+      <div class="form-container sign-in-container">
+        <form action="#">
+          <h1>TestSystem</h1>
+          <input type="text" placeholder="账号" v-model="account" />
+          <input type="password" placeholder="密码" v-model="password" />
+          <div class="button" @click="login()">登录</div>
+        </form>
+      </div>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-right">
+            <!-- <img class="logo" src="@/assets/logo.png" alt="" /> -->
+            <!-- <p>「 Business Direction is everything 」</p> -->
+            <!-- <button class="ghost" id="signUp">About Us</button>n -->
           </div>
         </div>
       </div>
-    </transition>
+    </div>
+    <!-- </transition> -->
   </div>
 </template>
 <script>
-// import jwt from "js-sha3";
 export default {
   name: "Login",
   data() {
@@ -36,18 +34,17 @@ export default {
   },
 };
 </script>
-<style scoped>
+<style>
 #login {
   font-family: "Montserrat", sans-serif;
-  background: #f6f5f7;
+  background: #13081f;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
   /* margin: -20px 0 50px; */
-  /* background-image: url("https://www.17sucai.com/preview/1749733/2019-06-22/%E7%99%BB%E5%BD%95/img/img1.png"); */
-  /* background-image: url('../assets/bg.jpeg'); */
+  background-image: url("../assets/back.jpg");
   background-size: cover;
 }
 .logo {
@@ -141,7 +138,7 @@ a {
   margin-top: 20px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  transition: transform 80ms ease-in;
+  /* transition: transform 80ms ease-in; */
 }
 
 input[type="text"] {
@@ -154,7 +151,7 @@ input[type="text"] {
   font-size: 16px;
   font-weight: 200px;
   padding: 10px 0;
-  transition: border 0.5s;
+  /* transition: border 0.5s; */
   outline: none;
   color: #fff;
   font-weight: bold;
@@ -170,7 +167,7 @@ input[type="password"] {
   font-size: 16px;
   font-weight: bold;
   padding: 10px 0;
-  transition: border 0.5s;
+  /* transition: border 0.5s; */
   outline: none;
   color: #fff;
 }
@@ -185,7 +182,7 @@ input[type="email"] {
   font-size: 16px;
   font-weight: 200px;
   padding: 10px 0;
-  transition: border 0.5s;
+  /* transition: border 0.5s; */
   outline: none;
   color: #fff;
   font-weight: bold;
@@ -213,7 +210,7 @@ input[type="email"] {
   position: absolute;
   top: 0;
   height: 100%;
-  transition: all 0.6s ease-in-out;
+  /* transition: all 0.6s ease-in-out; */
 }
 
 .sign-in-container {
@@ -236,7 +233,7 @@ input[type="email"] {
   width: 50%;
   height: 100%;
   overflow: hidden;
-  transition: transform 0.6s ease-in-out;
+  /* transition: transform 0.6s ease-in-out; */
   z-index: 100;
 }
 
@@ -249,7 +246,7 @@ input[type="email"] {
   height: 100%;
   width: 200%;
   transform: translateX(0);
-  transition: transform 0.6s ease-in-out;
+  /* transition: transform 0.6s ease-in-out; */
 }
 
 .overlay-panel {
@@ -264,7 +261,7 @@ input[type="email"] {
   width: 50%;
   text-align: center;
   transform: translateX(0);
-  transition: transform 0.6s ease-in-out;
+  /* transition: transform 0.6s ease-in-out; */
 }
 
 .overlay-right {

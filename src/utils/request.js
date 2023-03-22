@@ -57,5 +57,5 @@ instance.interceptors.response.use(res => {
     }
   }
   return Promise.reject(msg)
-}),
+});
 export default { instance };
