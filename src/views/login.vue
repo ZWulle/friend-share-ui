@@ -1,3 +1,4 @@
+// 登录组件
 <template>
   <div id="login">
     <!-- <transition appear name="opacitytrans"> -->
